@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;    
+}
+
+header img#logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+section#redes-sociais {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+}
