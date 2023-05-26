@@ -16,8 +16,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 </style>
 <style>
-.mySlides {
-display:none;
+.iframe-container {
+position: relative;
+overflow: hidden;
+width: 100%;
+padding-top: 80%;
+}
+.iframe-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 </style>
 </head>
@@ -61,102 +71,18 @@ display:none;
     <a href="https://twitter.com/amjap" target="_blank"><img class="w3-hover-opacity" src="imagens/redes-sociais/logo-twitter.jpg" alt="Acesso ao Twitter da AMJAP" style="width: 3em; height: 3em; border-radius: 10%;"></a>
     </div>
   </div> 
+    
 </header>
-
-<section>
-  <div class="w3-container w3-light-grey w3-center">
-    <h2><strong>Composição da Diretoria da AMJAP</strong></h2>
-    <p>Diretoria eleita em processo democrático em 00/00/2022, registrada em cartório nº 0000000</p>
-  </div>
-  
-  <div class="w3-content w3-light-grey w3-display-container">
-  
-  <div class="w3-display-container mySlides">
-    <div class="w3-card-4">
-      <header class="w3-container w3-light-grey w3-center">
-        <h3 class="w3-center w3-text-red"><strong>JOSÉ FULANO DE TAL</strong></h3>
-      </header>
-      <div class="w3-container">
-        <img class="w3-small" src="./imagens/diretores/diretor-geral.png" style="width:100%">
-        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-dark-grey">
-        Coordenador Geral
-        </div>
-      </div>
+<div class="w3-container w3-padding-32">
+  <div class="w3-container">
+    <div class="iframe-container w3-responsive">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17802.175323137224!2d-40.29770092092662!3d-20.281783677445908!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb8181e83d068af%3A0x666ae3e2d6fb345c!2sAssocia%C3%A7%C3%A3o%20dos%20Moradores%20de%20Jardim%20da%20Penha!5e0!3m2!1spt-BR!2sbr!4v1685060359995!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
-  
-  <div class="w3-display-container mySlides">
-    <div class="w3-card-4">
-      <header class="w3-container w3-light-grey w3-center">
-        <h3 class="w3-center w3-text-red">ANTÔNIO BELTRANO DE TAL</h3>
-      </header>
-      <div class="w3-container">
-        <img class="w3-small" src="./imagens/diretores/diretor-geral.png" style="width:100%">
-        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-dark-grey">
-        Diretor de Segurança
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="w3-display-container mySlides">
-    <div class="w3-card-4">
-      <header class="w3-container w3-light-grey w3-center">
-        <h3 class="w3-center w3-text-red">MARIA FULANA DE TAL</h3>
-      </header>
-      <div class="w3-container">
-        <img class="w3-small" src="./imagens/diretores/diretor-geral.png" style="width:100%">
-        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-dark-grey">
-        Diretora de Ação Social
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="w3-display-container mySlides">
-    <div class="w3-card-4">
-      <header class="w3-container w3-light-grey w3-center">
-        <h3 class="w3-center w3-text-red">JOANA BELTRANA DE TAL</h3>
-      </header>
-      <div class="w3-container">
-        <img class="w3-small" src="./imagens/diretores/diretor-geral.png" style="width:100%">
-        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-dark-grey">
-        Diretora de Esporte e Lazer
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-  
-  </div>
-  
-  <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-  }
-  </script>
-  
-
-</section>
+</div>
 
 <!-- Footer -->
-<footer class="w3-container w3-black w3-padding w3-center w3-opacity w3-margin-top"> 
+<footer class="w3-container w3-black w3-padding w3-center w3-opacity"> 
   <h6>Atividade prática profissional apresentada como requisito para aprovação na disciplina de Estágio Supervisionado do curso de Análise e Desenvolvimento de Sistemas da Faculdade MULTIVIX Serra - Orientador: Prof. Me. Valderêdo Sedano Fontana</h6>
   <p class="w3-center">&copy 2023 Copyright: <a class="w3-hover-text-red" href="https://github.com/priscilacezana" target="_blank" style="text-decoration: none;">Priscila Cezana</a></p>
 </footer>
